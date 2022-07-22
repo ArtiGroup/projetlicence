@@ -1,0 +1,54 @@
+:root {
+    --border-radius: 3px;
+
+    /* primary   */
+    --primary-300: #86B1F4;
+    --primary-400: #5D97F1;
+    --primary-500: #357DED;
+    --primary-600: #285EB2;
+    --primary-700: #1B3F77;
+
+    /* Secondary */
+    --secondary-300: #FCDD91;
+    --secondary-400: #FBD26D;
+    --secondary-500: #FAC748;
+    --secondary-600: #BC9536;
+    --secondary-700: #7D6424;
+
+    /* Error  */
+    --error-300: #F59D9D;
+    --error-400: #F27C7C;
+    --error-500: #EF5B5B;
+    --error-600: #B34444;
+    --error-700: #782E2E;
+
+    /* Success */
+    --success-300: #66DD89;
+    --success-400: #33D161;
+    --success-500: #00C63A;
+    --success-600: #00952C;
+    --success-700: #00631D;
+
+    /* Warning */
+    --warning-300: #FFED9A;
+    --warning-400: #FFE778;
+    --warning-500: #FFE156;
+    --warning-600: #BFA941;
+    --warning-700: #80712B;
+
+    /* Black  */
+    --black-300: #868991;
+    --black-400: #5D616C;
+    --black-500: #353A47;
+    --black-600: #282C35;
+    --black-700: #1B1D24;
+
+    /* Neutrl 100 */
+    --neutral-white-1oo: #F2F2F2;
+
+    /* White */
+    --white: #FDFFFC;
+
+    /* black */
+    --black: #070707;
+}
