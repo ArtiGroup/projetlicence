@@ -1,5 +1,7 @@
 :root {
     --border-radius: 3px;
+    --box-shadow: 4px 4px 20px rgba(0, 0, 0, .15);
+    --padding-dashboard-element: 32px 24px;
 
     /* primary   */
     --primary-300: #86B1F4;

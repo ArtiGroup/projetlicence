@@ -1,0 +1,246 @@
+/*********************
+    interface CA page
+***********************/
+@import url(libs/_variables.css);
+@import url(libs/_globals.css);
+
+body {
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas: 
+        'sidebar header'
+        'sidebar main'
+        ;
+}
+
+/******************************************
+ sidebar section 
+******************************************/
+.sidebar {
+    grid-area: sidebar;
+    position: fixed;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--primary-500);
+}
+
+.sidebar-brand-logo {
+    display: block;
+    width: 150px;
+    align-self: center;
+}
+
+.aside-menu {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.aside-menu-link {
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+    width: inherit;
+    padding: 8px 0 8px 8px;
+}
+
+.aside-menu-link:hover {
+    color: var(--black);
+    background-color: var(--secondary-300);
+    font-weight: bold;
+}
+
+.aside-menu-link.active-link {
+    display: block;
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--secondary-500);
+    width: inherit;
+    padding: 8px 0 8px 8px;
+    font-weight: bold;
+}
+
+
+/******************************************
+ header and navbar section 
+******************************************/
+.header {
+    position: fixed;
+    width: 80%;
+    grid-area: header;
+    position: relative;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, .15);
+    z-index: 99;
+}
+
+.header .navbar {
+    position: fixed;
+    width: inherit;
+    height: 80px;
+    padding: 8px;
+    background-color: var(--secondary-500);
+    color: var(--black);
+}
+
+.header .navbar .search-form {
+    display: flex;
+    width: 70%;
+    color: var(--black-400);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    width: 32px;
+    
+}
+
+.search-bar {
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    padding: 8px 40px 8px;
+}
+
+.search-bar:focus {
+    background: none;
+    border: none;
+    outline-color: none;
+    box-shadow: 0 0 0;
+}
+
+.user-container {
+    position: relative;
+    height: 80px;
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.username {
+    margin-bottom: 0;
+}
+
+.user-image {
+    display: block;
+    border: 1px solid red;
+    width: 64px;
+    height: 64px;
+    aspect-ratio: 16/9;
+    border-radius: 50%;
+}
+
+.user-container .icon {
+    display: block;
+}
+
+/******************************************
+ main section 
+******************************************/
+.main {
+    grid-area: main;
+    position: relative;
+}
+
+ul.breadcrumb {
+    list-style: none;
+    padding: 0;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "\203A";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: var(--black-300);
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.active-breadcrumb {
+    color: var(--error-500);
+    font-weight: bold;
+}
+
+.dashboard-element {
+    background-color: var(--white);
+    position: relative;
+    box-shadow: var(--box-shadow);
+    padding: var(--padding-dashboard-element);
+    border-radius: var(--border-radius);
+}
+
+.dashboard-element-item-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.dashboard-element-item {
+    height: 50px;
+    padding: 16px;
+    background-color: var(--primary-300);
+    border-radius: var(--border-radius);
+    text-align: center;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.dashboard-element-item:hover {
+    background-color: var(--primary-400);
+    color: var(--black);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+table {
+    border-bottom: 1px solid var(--secondary-500);
+}
+
+table tbody tr td p {
+    margin-bottom: 6px;
+}
+
+.table-head-primary {
+    background-color: var(--primary-300);
+}
+
+.dashboard-element-link {
+    display: block;
+    text-decoration: none;
+    color: var(--primary-500);
+}
+
+.dashboard-element-link:hover {
+    color: var(--primary-700);
+    font-weight: bold;
+}
