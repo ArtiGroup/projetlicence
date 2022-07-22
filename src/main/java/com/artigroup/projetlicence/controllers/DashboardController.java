@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @ControllerAdvice
 public class DashboardController {
     private static final String INDEX = "index";
-    private static final String PLANNING = "interfaceCA";
+    private static final String PLANNING = "planning";
+    private static final String FILIERE = "filiere";
 
     @GetMapping({"/", "/index"})
     public String dashboard() {
@@ -18,6 +19,11 @@ public class DashboardController {
     @GetMapping( "/planning")
     public String planning() {
         return PLANNING;
+    }
+
+    @GetMapping( "/filiere")
+    public String filiere() {
+        return FILIERE;
     }
 
 }
