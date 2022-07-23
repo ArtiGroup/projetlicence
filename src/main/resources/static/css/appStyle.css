@@ -196,7 +196,7 @@ ul.breadcrumb li a:hover {
     border-radius: var(--border-radius);
 }
 
-.dashboard-element-item-container {
+.dashboard-element-container {
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -205,6 +205,21 @@ ul.breadcrumb li a:hover {
 }
 
 .dashboard-element-item {
+    position: relative;
+    flex-basis: 23%;
+    background-color: var(--primary-300);
+    position: relative;
+    box-shadow: var(--box-shadow);
+    padding: var(--padding-dashboard-element);
+    border-radius: var(--border-radius);
+}
+
+.element-item-title {
+    padding-bottom: 3px;;
+    border-bottom: 3px solid var(--secondary-500);
+}
+
+.dashboard-element-item-link {
     height: 50px;
     padding: 16px;
     background-color: var(--primary-300);
@@ -214,7 +229,11 @@ ul.breadcrumb li a:hover {
     text-decoration: none;
 }
 
-.dashboard-element-item:hover {
+.dashboard-element-item-link:not(:last-child) {
+    margin-right: 16px;;
+}
+
+.dashboard-element-item-link:hover {
     background-color: var(--primary-400);
     color: var(--black);
     font-weight: bold;

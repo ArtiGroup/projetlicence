@@ -10,6 +10,7 @@ public class DashboardController {
     private static final String INDEX = "index";
     private static final String PLANNING = "planning";
     private static final String FILIERE = "filiere";
+    private static final String EC = "ec";
 
     @GetMapping({"/", "/index"})
     public String dashboard() {
@@ -24,6 +25,11 @@ public class DashboardController {
     @GetMapping( "/filiere")
     public String filiere() {
         return FILIERE;
+    }
+
+    @GetMapping( "/ec")
+    public String ec() {
+        return EC;
     }
 
 }
