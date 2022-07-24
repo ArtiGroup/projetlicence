@@ -74,10 +74,10 @@
             <div class="dashboard-element mb-4">
                 <h4 class="fw-bold mb-4">Liste des filières</h4>
                 <div class="dashboard-element-item-container">
-                    <a class="dashboard-element-item">L. GL<a/>
-                    <a class="dashboard-element-item">L. OGA<a/>
-                    <a class="dashboard-element-item">L. GIM<a/>
-                    <a class="dashboard-element-item">L. ASR<a/>
+                    <a class="dashboard-element-item-link">L. GL<a/>
+                    <a class="dashboard-element-item-link">L. OGA<a/>
+                    <a class="dashboard-element-item-link">L. GIM<a/>
+                    <a class="dashboard-element-item-link">L. ASR<a/>
                 </div>
             </div>
             <div class="dashboard-element mb-4">

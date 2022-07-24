@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 @ControllerAdvice
 public class DashboardController {
     private static final String INDEX = "index";
-    private static final String PLANNING = "planning";
+    private static final String PLANNING = "interfaceCA";
     private static final String FILIERE = "filiere";
     private static final String EC = "ec";
+    private static final String PLANNINGCREATE = "creerplanning";
+    private static final String ENSEIGNANTS = "enseignants";
 
     @GetMapping({"/", "/index"})
     public String dashboard() {
@@ -31,5 +33,17 @@ public class DashboardController {
     public String ec() {
         return EC;
     }
+
+    @GetMapping("/planning-create")
+    public String planningCreate() {
+        return PLANNINGCREATE;
+    }
+
+    
+    @GetMapping("/enseignants")
+    public String showEnseignants() {
+        return ENSEIGNANTS;
+    }
+
 
 }

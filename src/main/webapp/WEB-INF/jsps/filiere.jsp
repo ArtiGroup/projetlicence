@@ -80,15 +80,15 @@
             <div class="dashboard-element mb-4">
                 <h4 class="fw-bold mb-4">Unités d'Enseignement semestre 1</h4>
                 <div class="dashboard-element-item-container">
-                    <a class="dashboard-element-item">UE 51 <a />
-                    <a class="dashboard-element-item">UE 52<a />
+                    <a class="dashboard-element-item-link">UE 51 <a />
+                    <a class="dashboard-element-item-link">UE 52<a />
                 </div>
             </div>
             <div class="dashboard-element mb-4">
                 <h4 class="fw-bold mb-4">Unités d'Enseignement semestre 2</h4>
                 <div class="dashboard-element-item-container">
-                    <a class="dashboard-element-item">UE 51 <a />
-                    <a class="dashboard-element-item">UE 52<a />
+                    <a class="dashboard-element-item-link">UE 51 <a />
+                    <a class="dashboard-element-item-link">UE 52<a />
                 </div>
             </div>
             <div class="dashboard-element mb-4">
@@ -99,7 +99,7 @@
                             Modifier
                             <span class="iconify" data-icon="bxs:pencil" data-width="24" data-height="24"></span>
                         </a>
-                        <a href="#" class="dashboard-element-option-link">
+                        <a href="#" class="dashboard-element-option-link" data-bs-toggle="modal" data-bs-target="#modalCreerPlanning">
                             Nouveau planning
                             <span class="iconify" data-icon="ant-design:plus-outlined" data-width="24" data-height="24"></span>
                         </a>
@@ -173,6 +173,60 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
+            <!--    modal creer planning    -->
+            <div class="modal fade" id="modalCreerPlanning" tabindex="-1" aria-labelledby="modalCreerPlanning" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="w-100 d-flex justify-content-end p-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="text-center mb-4">Reporter la seance</h3>
+                            <form class="row g-3">
+                                <label for="filielre">Filière</label>
+                                <select class="form-select" aria-label="Choix de la filiere" id="filiere">
+                                    <option selected>GL</option>
+                                    <option value="1">OGA</option>
+                                    <option value="2">ASR</option>
+                                    <option value="3">RT</option>
+                                </select>
+                                <div class="col-md-6">
+                                    <label for="ue" class="form-label">UE</label>
+                                    <input type="text" class="form-control" id="ue" value="UE 51">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="ec" class="form-label">EC</label>
+                                    <input type="text" class="form-control" id="ec" value="EC 511">
+                                </div>
+                                <div class="col-12">
+                                    <label for="jour" class="form-label">Jour</label>
+                                    <input type="text" class="form-control" id="jour" placeholder="jour de passage">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="plagehoraire" class="form-label">Plage Horaire</label>
+                                    <input type="text" class="form-control" id="plagehoraire">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="salle" class="form-label">Salle</label>
+                                    <input type="text" class="form-control" id="salle">
+                                </div>
+                                <div class="col-12">
+                                    <label for="enseignant">Enseignant</label>
+                                    <select class="form-select" aria-label="Choix de la filiere" id="enseignant">
+                                        <option selected>Hassidd Belkassim Moustapha</option>
+                                        <option value="1">Etoundi Oyono Georges Levy</option>
+                                        <option value="2">Mahop Olivier Constantin</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary d-block mx-auto mt-3">Reporter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

@@ -161,10 +161,64 @@
                                 <td>22/06/2022</td>
                                 <td>18h - 22h</td>
                                 <td>C4</td>
-                                <td><a href="#">Reporter</a></td>
+                                <td><a href="#" data-bs-toggle="modal" data-bs-target="#modalReporter">Reporter</a></td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </div>
+            
+            <!-- modal Reporter -->
+            <div class="modal fade" id="modalReporter" tabindex="-1" aria-labelledby="modalReporter" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="w-100 d-flex justify-content-end p-3">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h3 class="text-center mb-4">Reporter la seance</h3>
+                            <form class="row g-3">
+                                <label for="filielre">Filière</label>
+                                <select class="form-select" aria-label="Choix de la filiere" id="filiere">
+                                    <option selected>GL</option>
+                                    <option value="1">OGA</option>
+                                    <option value="2">ASR</option>
+                                    <option value="3">RT</option>
+                                </select>
+                                <div class="col-md-6">
+                                    <label for="ue" class="form-label">UE</label>
+                                    <input type="text" class="form-control" id="ue" value="UE 51">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="ec" class="form-label">EC</label>
+                                    <input type="text" class="form-control" id="ec" value="EC 511">
+                                </div>
+                                <div class="col-12">
+                                    <label for="jour" class="form-label">Jour</label>
+                                    <input type="text" class="form-control" id="jour" placeholder="jour de passage">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="plagehoraire" class="form-label">Plage Horaire</label>
+                                    <input type="text" class="form-control" id="plagehoraire">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="salle" class="form-label">Salle</label>
+                                    <input type="text" class="form-control" id="salle">
+                                </div>
+                                <div class="col-12">
+                                    <label for="enseignant">Enseignant</label>
+                                    <select class="form-select" aria-label="Choix de la filiere" id="enseignant">
+                                        <option selected>Hassidd Belkassim Moustapha</option>
+                                        <option value="1">Etoundi Oyono Georges Levy</option>
+                                        <option value="2">Mahop Olivier Constantin</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary d-block mx-auto mt-3">Reporter</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
