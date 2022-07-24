@@ -30,8 +30,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="user-container">
-                    <p class="username fw-bold">Etoundi Oyono georges levy<br>
-                        <span class="user-role fw-normal">Delegue</span>
+                    <p class="username fw-bold">
+                        <a href="#" class="profile-link">Etoundi Oyono georges levy <br>
+                            <span class="user-role fw-normal">Delegue</span></a>
                     </p>
                     <!-- <img src="#" alt="User image" class="user-image"> -->
                     <span class="iconify icon" data-icon="carbon:user-avatar-filled" data-width="64"
@@ -72,14 +73,7 @@
     </aside>
     <main class="main">
         <div class="container">
-            <h3 class="fw-bold mt-5">EC 511 Intitulé le l'EC</h3>
-            <ul class="breadcrumb mb-5">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="#">CA Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="#">Licence GL</a></li>
-                <li class="breadcrumb-item"><a href="#">Cours semestre 1</a></li>
-                <li class="aside-menu-item active-breadcrumb">EC 511 Intitulé le l'EC</li>
-            </ul>
+            <h3 class="fw-bold my-5">EC 511 Intitulé le l'EC</h3>
             <div class="dashboard-element mb-4">
                 <h4 class="fw-bold mb-4">Détails de l'EC</h4>
                 <div class="dashboard-element-container">

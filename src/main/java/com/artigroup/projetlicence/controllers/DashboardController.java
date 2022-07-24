@@ -12,7 +12,9 @@ public class DashboardController {
     private static final String FILIERE = "filiere";
     private static final String EC = "ec";
     private static final String PLANNINGCREATE = "creerplanning";
-    private static final String ENSEIGNANTS = "enseignants";
+    private static final String SHOWENSEIGNANTS = "showenseignants";
+    private static final String SHOWETUDIANTS = "showetudiants";
+    private static final String SHOWPROFILE = "showprofile";
 
     @GetMapping({"/", "/index"})
     public String dashboard() {
@@ -42,7 +44,17 @@ public class DashboardController {
     
     @GetMapping("/enseignants")
     public String showEnseignants() {
-        return ENSEIGNANTS;
+        return SHOWENSEIGNANTS;
+    }
+
+    @GetMapping("/etudiants")
+    public String showEtudiants() {
+        return SHOWETUDIANTS;
+    }
+
+    @GetMapping("/profile")
+    public String showProfile() {
+        return SHOWPROFILE;
     }
 
 

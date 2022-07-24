@@ -30,8 +30,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="user-container">
-                    <p class="username fw-bold">Etoundi Oyono georges levy<br>
-                        <span class="user-role fw-normal">Delegue</span>
+                    <p class="username fw-bold"> <a href="#" class="text-dark">
+                        <a href="#" class="profile-link">Etoundi Oyono georges levy <br>
+                            <span class="user-role fw-normal">Delegue</span></a>
                     </p>
                     <!-- <img src="#" alt="User image" class="user-image"> -->
                     <span class="iconify icon" data-icon="carbon:user-avatar-filled" data-width="64"
@@ -51,7 +52,7 @@
                 </a>
             </li>
             <li class="aside-menu-item">
-                <a href="#" class="aside-menu-link active-link">
+                <a href="#" class="aside-menu-link">
                     <span class="iconify" data-icon="la:chalkboard-teacher" data-width="32" data-height="32"></span>
                     Enseignants
                 </a>
@@ -72,44 +73,43 @@
     </aside>
     <main class="main">
         <div class="container">
-            <h3 class="fw-bold mt-5">Licence GL</h3>
-            <ul class="breadcrumb mb-5">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="aside-menu-item active-breadcrumb">Licence GL</li>
-            </ul>
+            <h3 class="fw-bold my-5">Profil</h3>
             <div class="dashboard-element mb-4">
-                <h4 class="fw-bold mb-4">Liste des étudiants</h4>
-                <table class="table">
-                    <caption>Liste des étudiants</caption>
-                    <thead class="table-head-primary">
-                        <tr>
-                            <th scope="col">No.</th>
-                            <th scope="col">Matricule</th>
-                            <th scope="col">Nom</th>
-                            <th scope="col">Prenom</th>
-                            <th scope="col">Telephone</th>
-                            <th scope="col">E-mail</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>19i874</td>
-                            <td>Hassidd Belkassim</td>
-                            <td>Moustapha</td>
-                            <td>+237652147896</td>
-                            <td>hassidd@gmail.com</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>19i874</td>
-                            <td>Etoundi Oyono</td>
-                            <td>Georges Levy</td>
-                            <td>+237652147896</td>
-                            <td>etoundi@gmail.com</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h4 class="fw-bold mb-4">A propos</h4>
+                <div class="profile-information-container">
+                    <div class="profile-image-container">
+                        <img src="<c:url value=" assets/images/Logo_IUT_Douala.png" />" alt="Logo de l'IUT" class="sidebar-brand-logo mb-4 profile-image">
+                    </div>
+                    <div class="profile-informations-container">
+                        <div class="profile-informations-description mb-3">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium quod officia vel tempore sed at enim suscipit. Rem molestias, assumenda fugit a nam dolor consequuntur! Impedit dolore molestiae animi et!
+                        </div>
+                        <div class="profile-informations-infos">
+                            <div class="profile-informations-infos-title-container">
+                                <p class="info-title">Matricule</p>
+                                <p class="info-title">Nom</p>
+                                <p class="info-title">Prénom</p>
+                                <p class="info-title">E-mail</p>
+                                <p class="info-title">Téléphone</p>
+                                <p class="info-title">Département</p>
+                                <p class="info-title">Spécialité</p>
+                                <p class="info-title">Heures effectuées</p>
+                                <p class="info-title">Heures manquées</p>
+                            </div>
+                            <div class="profile-informations-infos-infos-container">
+                                <p class="info-infos">Matricule</p>
+                                <p class="info-infos">Nom</p>
+                                <p class="info-infos">Prénom</p>
+                                <p class="info-infos">E-mail</p>
+                                <p class="info-infos">Téléphone</p>
+                                <p class="info-infos">Département</p>
+                                <p class="info-infos">Spécialité</p>
+                                <p class="info-infos">Heures effectuées</p>
+                                <p class="info-infos">Heures manquées</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

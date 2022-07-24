@@ -11,7 +11,7 @@
     <jsp:include page="includes/iconify.jsp" flush="true"/>
     <link rel="stylesheet" href="<c:url value="/css/appStyle.css"/>" type="text/css"/>
     <script src="<c:url value="/js/app.js"/>" type="text/javascript" defer></script>
-    <title>enseignant</title>
+    <title>etudiants</title>
 </head>
 
 <body class="body-interface-amdin">
@@ -30,8 +30,9 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="user-container">
-                    <p class="username fw-bold">Etoundi Oyono georges levy<br>
-                        <span class="user-role fw-normal">Delegue</span>
+                    <p class="username fw-bold">
+                        <a href="#" class="profile-link">Etoundi Oyono georges levy <br>
+                        <span class="user-role fw-normal">Delegue</span></a>
                     </p>
                     <!-- <img src="#" alt="User image" class="user-image"> -->
                     <span class="iconify icon" data-icon="carbon:user-avatar-filled" data-width="64"
@@ -51,13 +52,13 @@
                 </a>
             </li>
             <li class="aside-menu-item">
-                <a href="#" class="aside-menu-link active-link">
+                <a href="#" class="aside-menu-link">
                     <span class="iconify" data-icon="la:chalkboard-teacher" data-width="32" data-height="32"></span>
                     Enseignants
                 </a>
             </li>
             <li class="aside-menu-item">
-                <a href="#" class="aside-menu-link">
+                <a href="#" class="aside-menu-link active-link">
                     <span class="iconify" data-icon="ph:student-fill" data-width="32" data-height="32"></span>
                     Etudiants
                 </a>
@@ -72,15 +73,20 @@
     </aside>
     <main class="main">
         <div class="container">
-            <h3 class="fw-bold mt-5">Licence GL</h3>
-            <ul class="breadcrumb mb-5">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="aside-menu-item active-breadcrumb">Licence GL</li>
-            </ul>
+            <h3 class="fw-bold my-5">Licence GL</h3>
             <div class="dashboard-element mb-4">
-                <h4 class="fw-bold mb-4">Liste de tous les enseignants</h4>
+                <h4 class="fw-bold mb-4">Liste des filières</h4>
+                <div class="dashboard-element-item-container">
+                    <a class="dashboard-element-item-link">L. GL<a />
+                    <a class="dashboard-element-item-link">L. OGA<a />
+                    <a class="dashboard-element-item-link">L. GIM<a />
+                    <a class="dashboard-element-item-link">L. ASR<a />
+                </div>
+            </div>
+            <div class="dashboard-element mb-4">
+                <h4 class="fw-bold mb-4">Etudiants GL</h4>
                 <table class="table">
-                    <caption>Liste des enseignants</caption>
+                    <caption>Liste des étudiants</caption>
                     <thead class="table-head-primary">
                         <tr>
                             <th scope="col">No.</th>

@@ -134,6 +134,16 @@ body {
     margin-bottom: 0;
 }
 
+.profile-link {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.profile-link:hover {
+    color: var(--black);
+    text-decoration: none;
+}
+
 .user-image {
     display: block;
     border: 1px solid red;
@@ -272,8 +282,35 @@ table tbody tr td p {
     font-weight: bold;
 }
 
-
-
 .dashboard-element-option-link:not(:last-child) {
     margin-right: 16px;
+}
+
+.profile-information-container {
+    display: flex;
+    gap: 32px;
+
+}
+
+.profile-image-container {
+    flex-basis: 200px;
+    height: 200px;
+}
+
+.profile-image {
+    width: 100%;
+    object-fit: contain;
+}
+
+.profile-informations-container {
+    flex-basis: 500px;
+}
+
+.profile-informations-infos {
+    display: flex;
+    gap: 32px;
+}
+
+.info-title {
+    font-weight: bold;
 }
