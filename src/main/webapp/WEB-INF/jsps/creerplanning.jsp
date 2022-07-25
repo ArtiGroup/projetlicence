@@ -11,7 +11,7 @@
     <jsp:include page="includes/iconify.jsp" flush="true"/>
     <link rel="stylesheet" href="<c:url value="/css/appStyle.css"/>" type="text/css"/>
     <script src="<c:url value="/js/app.js"/>" type="text/javascript" defer></script>
-    <title>Creer planning</title>
+    <title>Creation de la séance de cours</title>
 </head>
 
 <body class="body-interface-amdin">
@@ -75,7 +75,7 @@
         <div class="container">
             <h3 class="fw-bold my-5">Licence GL</h3>
             <div class="dashboard-element mb-4">
-                <h4 class="fw-bold mb-4">Créer un nouveau planning</h4>
+                <h4 class="fw-bold mb-4">Creation de la séance de cours</h4>
                 <form class="row g-3">
                     <div class="col-md-3">
                         <label for="niveau" class="form-label">Niveau</label>
