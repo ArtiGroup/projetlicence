@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.artigroup.projetlicence.entities.Planning;
 import com.artigroup.projetlicence.repositories.PlanningRepository;
 
+@Service
 public class PlanningServiceImpl implements PlanningService{
 
     @Autowired
