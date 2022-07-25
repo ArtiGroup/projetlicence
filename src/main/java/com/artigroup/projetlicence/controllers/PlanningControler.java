@@ -13,13 +13,13 @@ public class PlanningControler {
     @Autowired
     private PlanningService service;
 
-    @RequestMapping("showPage")
+    @RequestMapping("/showPage")
     public String showPage()
     {
         return "creerplanning";
     }
 
-    @RequestMapping("savePlanning")
+    @RequestMapping("/savePlanning")
     public String savePlanning(@ModelAttribute("planning") Planning planning)
     {
         service.savePlanning(planning);

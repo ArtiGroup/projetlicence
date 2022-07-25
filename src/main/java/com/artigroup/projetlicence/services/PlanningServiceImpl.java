@@ -3,6 +3,7 @@ package com.artigroup.projetlicence.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.artigroup.projetlicence.entities.Planning;
 import com.artigroup.projetlicence.repositories.PlanningRepository;

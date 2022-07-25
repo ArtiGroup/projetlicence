@@ -76,10 +76,10 @@
             <h3 class="fw-bold my-5">Licence GL</h3>
             <div class="dashboard-element mb-4">
                 <h4 class="fw-bold mb-4">Créer un nouveau planning</h4>
-                <form class="row g-3">
+                <form action="savePlanning" method="post" class="row g-3">
                     <div class="col-md-3">
                         <label for="niveau" class="form-label">Niveau</label>
-                        <select class="form-select" aria-label="Choix du niveau" id="niveau">
+                        <select class="form-select" aria-label="Choix du niveau" id="niveau" name="niveau">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -89,7 +89,7 @@
                     </div>
                     <div class="col-md-3">
                         <label for="filiere" class="form-label">Filière</label>
-                        <select class="form-select" aria-label="Choix de la filiere" id="filiere">
+                        <select class="form-select" aria-label="Choix de la filiere" id="filiere" name="filiere">
                             <option value="1">GL</option>
                             <option value="2">ASR</option>
                             <option value="2">RT</option>
@@ -97,7 +97,7 @@
                     </div>
                     <div class="col-md-3">
                         <label for="formation" class="form-label">Formation</label>
-                        <select class="form-select" aria-label="Choix de la formation" id="formation">
+                        <select class="form-select" aria-label="Choix de la formation" id="formation" name="formation">
                             <option selected></option>
                             <option value="1">Initiale</option>
                             <option value="2">Alternance</option>
@@ -105,65 +105,65 @@
                     </div>
                     <div class="col-md-3">
                         <label for="periode" class="form-label">Periode</label>
-                        <select class="form-select" aria-label="Choix de la periode" id="periode">
+                        <select class="form-select" aria-label="Choix de la periode" name="periode">
                             <option value="1">Semestre 1</option>
                             <option value="2">Semestre 2</option>
                         </select>
                     </div>
                     <div class="col-md-2">
                         <label for="codeue" class="form-label">Code UE</label>
-                        <input type="text" class="form-control" id="codeue">
+                        <input type="text" class="form-control" name="ue">
                     </div>
                     <div class="col-md-2">
                         <label for="codeec" class="form-label">Code EC</label>
-                        <input type="text" class="form-control" id="codeec">
+                        <input type="text" class="form-control" name="ec">
                     </div>
                     <div class="col-md-2">
                         <label for="quotahoraire" class="form-label">Quota Horaire</label>
-                        <input type="text" class="form-control" id="quotahoraire">
+                        <input type="text" class="form-control" name="quotaHoraire">
                     </div>
                     <div class="col-2">
                         <label for="datedebut">Date début</label>
-                        <input type="text" class="form-control" id="datedebut">
+                        <input type="time" class="form-control" name="heureDebut">
                     </div>
                     <div class="col-2">
                         <label for="datefin">Date de fin</label>
-                        <input type="text" class="form-control" id="datefin">
+                        <input type="time" class="form-control" name="heureFin">
                     </div>
                     <div class="col-2">
                         <label for="heurescm">Heures CM</label>
-                        <input type="text" class="form-control" id="heurescm">
+                        <input type="text" class="form-control" name="heureCM">
                     </div>
                     <div class="col-2">
                         <label for="heurestd">Heures TD</label>
-                        <input type="text" class="form-control" id="heurestd">
+                        <input type="text" class="form-control" name="heureTP">
                     </div>
                     <div class="col-2">
                         <label for="heurestpe">Heures TPE</label>
-                        <input type="text" class="form-control" id="heurestpe">
+                        <input type="text" class="form-control" name="heuresTPE">
                     </div>
                     <div class="col-2">
                         <label for="salle1">Salle 1</label>
-                        <input type="text" class="form-control" id="salle1">
+                        <input type="text" class="form-control" name="salle1">
                     </div>
                     <div class="col-2">
                         <label for="salle2">Salle 2</label>
-                        <input type="text" class="form-control" id="salle2">
+                        <input type="text" class="form-control" name="salle2">
                     </div>
                     <div class="col-6">
                         <label for="enseignantprincipal">Enseignant 1</label>
-                        <input type="text" class="form-control" id="enseignantprincipal">
+                        <input type="text" class="form-control" name="enseignant1">
                     </div>
                     <div class="col-6">
                         <label for="enseignantsecondaire">Enseignant 2</label>
-                        <input type="text" class="form-control" id="enseignantsecondaire">
+                        <input type="text" class="form-control" name="enseignant2">
                     </div>
                     <div class="col-6">
                         <label for="jours" class="form-label">Jours de passage</label>
-                        <input type="text" class="form-control" id="jours" placeholder="Séparer les jours par un virgule">
+                        <input type="text" class="form-control" name="jourPassage" placeholder="Séparer les jours par un virgule">
                     </div>
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary d-block mx-auto mt-3">Ajouter au planning</button>
+                        <input type="submit" class="btn btn-primary d-block mx-auto mt-3" value="Ajouter au planning">
                     </div>
                 </form>
             </div>

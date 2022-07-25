@@ -20,7 +20,7 @@ public class Planning {
     private int niveau;
     private String ue;
     private String ec;
-    private LocalDate jourPassage;
+    private String jourPassage;
     private String salle1;
     private String salle2;
     private String enseignant1;
